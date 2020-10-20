@@ -1,0 +1,125 @@
+.row {
+    width: 50%;
+    margin: 100px auto 10px;
+}
+
+.formDiv {
+    width: 50%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 20px;
+}
+
+form label {
+    width: 100%;
+    margin: 10px 0 5px;
+}
+
+form input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 5px;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 20px;
+    position: relative;
+}
+
+.buttons button {
+    padding: 10px 40px;
+    background-color: rgb(51, 122, 183);
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.buttons button:nth-child(1) {
+    margin-right: 30px;
+    border-radius: 10px;
+    background-color: rgba(51, 122, 183, 0.5);
+    cursor: not-allowed;
+}
+
+.buttons button:nth-child(3) {
+    margin-right: 30px;
+    border-radius: 10px;
+    background-color: red;
+    position: absolute;
+    z-index: -100;
+    display: none;
+}
+
+.fa-trash {
+    margin-left: 30px;
+}
+
+.fa-trash,
+.fa-edit {
+    cursor: pointer;
+}
+
+.addSearch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.addSearch label {
+    margin: 0;
+    font-size: 15px;
+}
+
+.addSearch button {
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.addSearch button:hover {
+    transition: 0.3s;
+}
+
+.addSearch input {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.selected {
+    background-color: rgb(51, 122, 183) !important;
+    cursor: pointer !important;
+}
+
+.wrongMail {
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px rgba(250, 0, 0, .5);
+    color: rgba(250, 0, 0, .8);
+    display: none;
+}
+
+.cancel:hover,
+.selected:hover {
+    background-color: #007bff !important;
+}
+
+.totalMaount {
+    background-color: #28a745;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.totalMaount span {
+    margin-left: 250px;
+}
